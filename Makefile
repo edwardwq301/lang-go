@@ -4,7 +4,9 @@ build:
 	go build -o bin/gin-helloworld
 
 test:
-	go test -v ./...
+	go install gotest.tools/gotestsum@latest
+	gotestsum --junitfile test-result/junit.xml ./...
+	# go test -v ./...
 
 run:
 	go run main.go

@@ -1,7 +1,7 @@
 .PHONY: build test
 
 build:
-	go build -o bin/gin-helloworld
+	go build -o bin/gin-helloworld.exe
 
 test:
 	go install gotest.tools/gotestsum@latest
